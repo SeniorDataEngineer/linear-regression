@@ -21,9 +21,9 @@ class HasPropertyMixin():
             >>> assert hpm.has_object('has_object') == True
         """
         return len([
-            obj
-            for obj in dir(self)
-            if obj == name])
+                    obj
+                    for obj in dir(self)
+                    if obj == name])
 
         
 if __name__ == "__main__":
