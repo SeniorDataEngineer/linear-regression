@@ -1,5 +1,5 @@
 #!/usr/bin/env python3.8.5
-# Copyright 2020, Rose Software Ltd, All rights reserved.
+# Copyright 2021, Rose Software Ltd, All rights reserved.
 
 # Third party imports.
 import numpy
@@ -28,6 +28,14 @@ class Neuron(HasPropertyMixin):
                             f'{self.__class__}.')
         self.algorithm = getattr(self, algorithm)
 
+    def set_report(
+            self,
+            report: dict):
+        """
+        Store the report for the Neuron function.
+        """
+        self.report = report
+
     def decide(
             self,
             w: numpy.ndarray,
@@ -50,8 +58,7 @@ class Neuron(HasPropertyMixin):
     def decide_bias(
             self,
             w: numpy.ndarray,
-            x: numpy.ndarray,
-            t: float) -> float:
+            x: numpy.ndarray) -> float:
         """
         decide_bias uses the bias unit to subtract the threshold
         from the algorithm result. It is functionally the same as
@@ -60,10 +67,11 @@ class Neuron(HasPropertyMixin):
             float
         Doctest:
             >>> n = Neuron()
-            >>> assert n.decide_bias([1,1,0], [0.25,0.3,0.1], 0.5) == 1
+            >>> assert n.decide_bias([-1,1,1,0], [0.25,0.3,0.1], 0.5) == 1
         """
-        return self.algorithm(w, x) + -1 * t \
-               >= 0
+        if self.algorithm(w[1:], x) + w[0] >= 0:
+            return 1
+        return -1
 
     def _linear_algebra(
             self,
