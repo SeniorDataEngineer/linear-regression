@@ -12,7 +12,7 @@ README_PATH = f'C:\\Users\\{LOCAL_USER}\\source\\repos\\LogisticRegressionPython
 setup(
     name="my_linear_regression",
 
-    version='0.0.1',
+    version='0.0.8',
 
     license='None',
 
