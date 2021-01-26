@@ -5,7 +5,7 @@
 import numpy
 
 # Project imports.
-from has_property_mixin import HasPropertyMixin
+from ..mixin.has_property_mixin import HasPropertyMixin
 
 
 class Neuron(HasPropertyMixin):
@@ -16,7 +16,8 @@ class Neuron(HasPropertyMixin):
 
     def __init__(
             self,
-            algorithm: object = "_linear_algebra"):
+            algorithm: object = "_linear_algebra",
+            **kwargs,):
         """
         Initliazes a neuron with a particular algorithm for
         deciding whether to fire. The default algorithm is
@@ -79,7 +80,7 @@ class Neuron(HasPropertyMixin):
         """
         if not len(w) == len(x):
             raise ValueError('Neuron ._linear_algebra: Length of w'
-                            'and x must be the same')
+                            ' and x must be the same')
         return sum([
                     w[i] * x[i]
                     for i in range(0, len(w))])
