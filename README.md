@@ -18,7 +18,20 @@ Notebook illustrating usage of the package.
 * "Mr. James Rose" <jameserose8@gmail.com>
 
 # <a name="features"></a>Features
-* update this!
+* Neuron  
+  * _linear_algebra
+  * decide
+  * decide_bias
+  * HasPropertyMixin
+* HasPropertyMixin  
+  * HasObject
+* LinearRegressor  
+  * set_weights
+  * train_model
+  * test_model
+  * test_model_
+  * get_evolutions
+  * HasPropertyMixin
 
 
 # <a name="structure"></a>Project Structure
