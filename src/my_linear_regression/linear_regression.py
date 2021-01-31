@@ -35,6 +35,7 @@ class LinearRegressor(HasPropertyMixin):
         """
         self.eta = eta
         self.epochs = epochs
+        self.bias = bias
         self.samples_train = samples_train
         self.samples_test = samples_test
         self.labels_train = labels_train
@@ -66,7 +67,7 @@ class LinearRegressor(HasPropertyMixin):
         """
         Fits the model.
         """
-        self.set_weights(bias=bias)
+        self.set_weights(bias=self.bias)
         w = self.weights
         X = self.samples_train
         Y = self.labels_train
