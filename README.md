@@ -27,9 +27,16 @@ Notebook illustrating usage of the package.
   |_ linear_regression_demo.ipynb 
 |_ src  
   |_ my_linear_regression
+    |_ mixin
+      |_ __init__.py 
+      |_ has_property_mixin.py
+    |_ neuron
+      |_ __init__.py 
+      |_ artificial_neuron.py
     |_ __init__.py 
     |_ linear_regression.py
   |_setup.py
+|_ .gitignore
 |_ README.md
 |_ requirements.txt
 ```
