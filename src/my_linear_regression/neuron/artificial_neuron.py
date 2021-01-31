@@ -25,7 +25,7 @@ class Neuron(HasPropertyMixin):
         """
         if not self.has_object(name=algorithm):
             raise ValueError(f'The method {algorithm} does not exist on class'
-                            f'{self.__class__}.')
+                             f'{self.__class__}.')
         self.algorithm = getattr(self, algorithm)
 
     def set_report(
@@ -76,7 +76,7 @@ class Neuron(HasPropertyMixin):
     def _linear_algebra(
             self,
             w: numpy.ndarray,
-            x: numpy.ndarray) -> float: 
+            x: numpy.ndarray) -> float:
         """
         _linear_algebra calculates the sum of the products between
         w and x. \n
@@ -88,7 +88,7 @@ class Neuron(HasPropertyMixin):
         """
         if not len(w) == len(x):
             raise ValueError('Neuron ._linear_algebra: Length of w'
-                            ' and x must be the same')
+                             ' and x must be the same')
         return sum([
                     w[i] * x[i]
                     for i in range(0, len(w))])

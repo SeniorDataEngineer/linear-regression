@@ -25,7 +25,7 @@ class HasPropertyMixin():
                     for obj in dir(self)
                     if obj == name])
 
-        
+
 if __name__ == "__main__":
     import doctest
     doctest.testmod()

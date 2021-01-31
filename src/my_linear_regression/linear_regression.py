@@ -61,7 +61,7 @@ class LinearRegressor(HasPropertyMixin):
         """
         self.weights = [
                         randint(1, 1000) / 5000 * -1
-                        for _ in range(0, len(self.samples_train[0])+1) ]
+                        for _ in range(0, len(self.samples_train[0])+1)]
 
     def train_model(self):
         """
