@@ -31,7 +31,7 @@ class LinearRegressor(HasPropertyMixin):
         Initializes a linear regressor. Takes eta which is the learning
         rate and epochs which is the number of simulations to run for a
         given target file path. It instantiates a DataSplitter for the
-        specified target path. \n
+        specified target path.
         """
         self.eta = eta
         self.epochs = epochs
