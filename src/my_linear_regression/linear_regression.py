@@ -57,7 +57,7 @@ class LinearRegressor(HasPropertyMixin):
     def set_weights_(self):
         """
         Set the random weights, one for each feature that is used for
-        training and the bias. \n
+        training and the bias.
         """
         self.weights = [
                         randint(1, 1000) / 5000 * -1
