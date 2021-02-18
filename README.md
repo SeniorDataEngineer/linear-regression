@@ -36,6 +36,10 @@ Notebook illustrating usage of the package.
 
 # <a name="structure"></a>Project Structure
 ```
+|_ .vscode  
+  |_ ...
+|_ data  
+  |_ IRIS.csv
 |_ Notebooks
   |_ linear_regression_demo.ipynb 
 |_ src  
