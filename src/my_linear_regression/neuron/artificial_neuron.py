@@ -19,9 +19,8 @@ class Neuron(HasPropertyMixin):
             algorithm: object = "_linear_algebra",
             **kwargs,):
         """
-        Initliazes a neuron with a particular algorithm for
-        deciding whether to fire. The default algorithm is
-        _linear_algebra.
+        Initliazes a neuron with a particular algorithm for deciding whether to
+        fire. The default algorithm is _linear_algebra.
         """
         if not self.has_object(name=algorithm):
             raise ValueError(f'The method {algorithm} does not exist on class'
