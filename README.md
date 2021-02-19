@@ -33,7 +33,6 @@ Notebook illustrating usage of the package.
   * get_evolutions
   * HasPropertyMixin
 
-
 # <a name="structure"></a>Project Structure
 ```
 |_ .vscode  
