@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "c:\\Users\\METIC\\anaconda3\\envs\\venv-linear-regression\\python.exe"
+    "python.pythonPath": "H:\\Anaconda\\envs\\venv-linear-regression\\python.exe",
+    "python.pipenvPath": "H:\\Anaconda\\envs\\venv-linear-regression\\Scripts\\pip.exe",
 }
