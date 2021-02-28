@@ -8,6 +8,7 @@ Notebook illustrating usage of the package.
 * [Team Members](#team-members)
 * [Features](#features)
 * [Project Structure](#structure)
+* [Getting the project running](#run-project)
 * [Standards](#standards)
 * [Testing](#testing)
 
@@ -33,7 +34,6 @@ Notebook illustrating usage of the package.
   * get_evolutions
   * HasPropertyMixin
 
-
 # <a name="structure"></a>Project Structure
 ```
 |_ .vscode  
@@ -57,6 +57,17 @@ Notebook illustrating usage of the package.
 |_ README.md
 |_ requirements.txt
 ```
+
+# <a name="run-project"></a>Getting the project running
+This guide assume that you are using Visual Studio Code and Git.
+
+1. [Download](https://www.anaconda.com/products/individual) & install Anaconda distribution of Python 3.8.5.
+1. Create a virtual environment called **venv-linear-regression** using Anaconda Navigator at _C:\Users\username\anaconda3\envs_ .
+1. Clone project to _C:\Users\username\source\repos_ on local machine.
+1. Install package into **venv-linear-regression**.
+1. Open project workspace in VSC.
+1. Open terminal and `pip install -r requirements.txt`.
+1. Open the notebook and run cells.
 
 # <a name="standards"></a>Standards
 All code has been checked with `pycodestyle` utility to match  
