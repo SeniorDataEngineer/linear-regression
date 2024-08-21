@@ -3,7 +3,7 @@
 from pseudo-code. The project includes a Jupyter
 Notebook illustrating usage of the package.
 
-<video src='https://drive.proton.me/urls/SQSWQS0PBC#vXN3rNy2Ce4h' width=180/></video>
+
 
 # Table of Contents
 * [License](#license)
