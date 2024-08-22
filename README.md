@@ -3,8 +3,8 @@
 from pseudo-code. The project includes a Jupyter
 Notebook illustrating usage of the package.
 
-# Notebook Video
-
+# Video demonstration
+Download the video to view.
 https://github.com/SeniorDataEngineer/linear-regression/blob/master/jer-linear-regression-vid.mp4
 
 
