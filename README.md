@@ -5,7 +5,7 @@ Notebook illustrating usage of the package.
 
 # Notebook Video
 
-https://github.com/SeniorDataEngineer/linear-regression/blob/master/jer-linear-regression-vid2.avi
+https://github.com/SeniorDataEngineer/linear-regression/blob/master/jer-linear-regression-vid.mp4
 
 
 # Table of Contents
